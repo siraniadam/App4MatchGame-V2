@@ -13,6 +13,16 @@
 		2407BC73244DD33700148A5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2407BC71244DD33700148A5F /* Main.storyboard */; };
 		2407BC75244DD33900148A5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2407BC74244DD33900148A5F /* Assets.xcassets */; };
 		2407BC78244DD33900148A5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2407BC76244DD33900148A5F /* LaunchScreen.storyboard */; };
+		2407BC80244DD36700148A5F /* MesNotes.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2407BC7F244DD36700148A5F /* MesNotes.rtf */; };
+		2407BC84244DDC9E00148A5F /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2407BC83244DDC9E00148A5F /* CardModel.swift */; };
+		2407BC87244DDECD00148A5F /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2407BC86244DDECD00148A5F /* Card.swift */; };
+		2407BC89244DEB6E00148A5F /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2407BC88244DEB6E00148A5F /* CardCollectionViewCell.swift */; };
+		24BF48F82450E94500C92120 /* cardflip.wav in Resources */ = {isa = PBXBuildFile; fileRef = 24BF48F42450E94500C92120 /* cardflip.wav */; };
+		24BF48F92450E94500C92120 /* shuffle.wav in Resources */ = {isa = PBXBuildFile; fileRef = 24BF48F52450E94500C92120 /* shuffle.wav */; };
+		24BF48FA2450E94500C92120 /* dingcorrect.wav in Resources */ = {isa = PBXBuildFile; fileRef = 24BF48F62450E94500C92120 /* dingcorrect.wav */; };
+		24BF48FB2450E94500C92120 /* dingwrong.wav in Resources */ = {isa = PBXBuildFile; fileRef = 24BF48F72450E94500C92120 /* dingwrong.wav */; };
+		24BF48FE2450E97400C92120 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24BF48FD2450E97400C92120 /* AVFoundation.framework */; };
+		24BF49002450E9B100C92120 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BF48FF2450E9B100C92120 /* SoundManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +34,16 @@
 		2407BC74244DD33900148A5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2407BC77244DD33900148A5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2407BC79244DD33900148A5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2407BC7F244DD36700148A5F /* MesNotes.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = MesNotes.rtf; sourceTree = "<group>"; };
+		2407BC83244DDC9E00148A5F /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		2407BC86244DDECD00148A5F /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		2407BC88244DEB6E00148A5F /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
+		24BF48F42450E94500C92120 /* cardflip.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cardflip.wav; sourceTree = "<group>"; };
+		24BF48F52450E94500C92120 /* shuffle.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = shuffle.wav; sourceTree = "<group>"; };
+		24BF48F62450E94500C92120 /* dingcorrect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dingcorrect.wav; sourceTree = "<group>"; };
+		24BF48F72450E94500C92120 /* dingwrong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dingwrong.wav; sourceTree = "<group>"; };
+		24BF48FD2450E97400C92120 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		24BF48FF2450E9B100C92120 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24BF48FE2450E97400C92120 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +61,10 @@
 		2407BC5F244DD33700148A5F = {
 			isa = PBXGroup;
 			children = (
+				2407BC7F244DD36700148A5F /* MesNotes.rtf */,
 				2407BC6A244DD33700148A5F /* App4MatchGame */,
 				2407BC69244DD33700148A5F /* Products */,
+				24BF48FC2450E97400C92120 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +79,55 @@
 		2407BC6A244DD33700148A5F /* App4MatchGame */ = {
 			isa = PBXGroup;
 			children = (
+				24BF48F32450E92200C92120 /* Sound */,
+				2407BC8A244E809D00148A5F /* View controllers */,
+				2407BC85244DDCF000148A5F /* Model */,
+				24BF48FF2450E9B100C92120 /* SoundManager.swift */,
 				2407BC6B244DD33700148A5F /* AppDelegate.swift */,
 				2407BC6D244DD33700148A5F /* SceneDelegate.swift */,
-				2407BC6F244DD33700148A5F /* ViewController.swift */,
 				2407BC71244DD33700148A5F /* Main.storyboard */,
 				2407BC74244DD33900148A5F /* Assets.xcassets */,
 				2407BC76244DD33900148A5F /* LaunchScreen.storyboard */,
 				2407BC79244DD33900148A5F /* Info.plist */,
 			);
 			path = App4MatchGame;
+			sourceTree = "<group>";
+		};
+		2407BC85244DDCF000148A5F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2407BC83244DDC9E00148A5F /* CardModel.swift */,
+				2407BC86244DDECD00148A5F /* Card.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2407BC8A244E809D00148A5F /* View controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2407BC6F244DD33700148A5F /* ViewController.swift */,
+				2407BC88244DEB6E00148A5F /* CardCollectionViewCell.swift */,
+			);
+			path = "View controllers";
+			sourceTree = "<group>";
+		};
+		24BF48F32450E92200C92120 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				24BF48F42450E94500C92120 /* cardflip.wav */,
+				24BF48F62450E94500C92120 /* dingcorrect.wav */,
+				24BF48F72450E94500C92120 /* dingwrong.wav */,
+				24BF48F52450E94500C92120 /* shuffle.wav */,
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
+		24BF48FC2450E97400C92120 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				24BF48FD2450E97400C92120 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +188,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24BF48FB2450E94500C92120 /* dingwrong.wav in Resources */,
+				24BF48F92450E94500C92120 /* shuffle.wav in Resources */,
+				2407BC80244DD36700148A5F /* MesNotes.rtf in Resources */,
 				2407BC78244DD33900148A5F /* LaunchScreen.storyboard in Resources */,
 				2407BC75244DD33900148A5F /* Assets.xcassets in Resources */,
 				2407BC73244DD33700148A5F /* Main.storyboard in Resources */,
+				24BF48FA2450E94500C92120 /* dingcorrect.wav in Resources */,
+				24BF48F82450E94500C92120 /* cardflip.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,8 +207,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2407BC70244DD33700148A5F /* ViewController.swift in Sources */,
+				24BF49002450E9B100C92120 /* SoundManager.swift in Sources */,
 				2407BC6C244DD33700148A5F /* AppDelegate.swift in Sources */,
+				2407BC87244DDECD00148A5F /* Card.swift in Sources */,
 				2407BC6E244DD33700148A5F /* SceneDelegate.swift in Sources */,
+				2407BC89244DEB6E00148A5F /* CardCollectionViewCell.swift in Sources */,
+				2407BC84244DDC9E00148A5F /* CardModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +295,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -273,9 +346,11 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
